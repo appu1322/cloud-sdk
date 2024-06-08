@@ -12,6 +12,12 @@ git submodule init
 git submodule update
 ```
 
+If facing any issue in git submodules update cmd, run:
+
+```bash
+git submodule foreach --recursive git reset --hard
+```
+
 ## Installation and Run
 
 To install the dependencies and run the containers, run:
