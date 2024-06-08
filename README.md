@@ -1,4 +1,16 @@
-# mini_cloud
+# Setup Cloud
+
+## clone Submodules
+
+To clone submodule, run:
+
+```bash
+git submodule init
+```
+
+```bash
+git submodule update
+```
 
 ## Installation and Run
 
