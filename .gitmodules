@@ -1,0 +1,6 @@
+[submodule "cloud-backend"]
+	path = cloud-backend
+	url = https://github.com/appu1322/cloud-backend.git
+[submodule "cloud-frontend"]
+	path = cloud-frontend
+	url = https://github.com/appu1322/cloud-frontend.git
