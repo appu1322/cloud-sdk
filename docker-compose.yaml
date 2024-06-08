@@ -8,10 +8,10 @@ services:
     volumes:
       - ./volumes/mongo:/data/db
 
-  cloud_backend:
+  cloud-backend:
     build: 
-      context: cloud_backend
-    container_name: cloud_backend
+      context: cloud-backend
+    container_name: cloud-backend
     environment: 
       NODE_ENV: ${NODE_ENV}
       PORT: ${PORT}
@@ -23,12 +23,12 @@ services:
     volumes:
       - ./volumes/uploads:/usr/app/uploads
   
-  cloud_frontend:
+  cloud-frontend:
     build: 
-      context: cloud_frontend
+      context: cloud-frontend
       args:
         VITE_BASE_URL: ${VITE_BASE_URL}
-    container_name: cloud_frontend
+    container_name: cloud-frontend
     restart: "always"
     environment: 
       VITE_BASE_URL: ${VITE_BASE_URL}
